@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial scale=1.0">
+     <meta name="description" content="Learn about the 3 main types of fish: Bony, Cartilaginous amd jawless, with examples from Pakistan">
+     <title>The World Of Fish</title>
+     <style>
+        :root {
+           --bg: #e6f7ff;
+           --text: #00334d;
+           --card: white;
+           --accent: #0077b6;
+           --accent-light: #caf0f8;
+           --border: #90e0ef;
+          }
+           [data-theme="dark"] {
+           --bg: #001f2e;
+           --text: #caf0f8;
+           --card: #023e73;
+           --accent: #48cae4;
+           --accent-light: #0077b6;
+           --border: #0077b6;
+          }
+
+          body { font-family: Arial, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; transition: 0.3s; }
+          header { background: var(--accent); color: white; padding: 30px; text-align: center; position: sticky; top: 0; z-index: 10; }
+         .theme-btn { position: absolute; right: 20px; top: 20px; background: white; color: var(--accent); border: none; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+         [data-theme="dark"] .theme-btn { background-var(--accent-light); color: white; }
+
+         .container { max-width: 900px; margin: auto; padding: 20px; }
+         .card { background: var(--card); margin: 20px 0; padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition 0.2s;}
+         .card:hover { transform: translateY(-3px); }
+         h2 { color: var(--accent); border-bottom: 2px solid var(--accent-light); padding-bottom: 5px; }
+         img { width: 100%; max-width: 400px; border-radius: 8px; display: block; margin: 10px 0; }
+         ul { padding-left: 20px; }
+         .video-link { display: block; margin: 8px 0; color: var(--accent); font-weight: bold; text-decoration: none; }
+         .video-link:hover { text decortion: underline; }
+
+         /* Tabs */
+         .tabs { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+         .tab-btn { padding: 10px 16px; border: none; border-radius: 8px; background: var(--accent-light); color: var(--text); cursor: pointer; font-weight: bold; }
+         .tab-btn.active { background: var(--accent); color: white; }
+         .tab-content.active { display: block; }
+
+         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+         th, td { border: 1px solid var(--border); padding: 10px; text-align: left; }
+         th { background: var(--accent-light); color: var(--text); }
+
+         /* Quiz */
+         .quiz-q { margin: 15px 0; }
+         .quiz-option { display: block; margin: 6px 0; padding: 8px; borde-radius: 6px; background: var(--accent-light); cursor: pinter; }
+         .quiz-option:hover { opacity: 0.8; }
+         .result { font-weight: bold; margin-top: 10px; }
+         footer { text-align: center; padding: 20px; font-size: 14px; opacity: 0.7; }
+        </style>
+   </head>
+ <body>
+
+   <header>
+    <h1>THE WORLD OF FISH</h1>
+    <p>Understanding the 3 main types of fish</p>
+    <button class="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+   </header>
+
+   <div class="container">
+
+     <!-- SECTION 1: BONY FISH -->
+     <div class="card">
+     <h2>1. Bony Fish - Osteichthyes</h2>
+     <img src="1.jpg" alt="Mahseer bony fish from Pakistan" loading="lazy">
+     <p>Most fish you see are bony fish. They have skeletons made of bone and live in both fresh and salt water. </p>
+      <h3>Key Features:</h3>
+     <ul>
+        <li>Skeletons made of bone</li>
+        <li>Gills covered by an operclum</li>
+        <li>Have a swim bladder to control buoyancy</li>
+        <li>Thin overlapping scales</li>
+      </ul>
+     <h3>Common Examples:</h3>
+<ul>
+        <li>Goldfish</li>
+        <li>Salmon</li>
+        <li>Tuna</li>
+        <li>Mahseer - found in Pakistani rivers</li>
+        <li>Indian Pomfret - popular in karachi seafood</li>
+ </ul>            
+        <a class="video-link" href="https://www.youtube.com/watch?v=PksKZoZIkI4" target="_blank">Video: Types Of Boney Fish Explained</a>
+</div> 
+
+     <!--SECTION 2: CARTILAGINOUS FISH -->
+<div class="card">
+     <h2>2. Cartilaginous Fish - Chondrichthyes</h2>
+     <img src="2.jpg" alt="Shark cartilaginous fish" loading="lazy">
+     <p>These fish have skeletons made of cartilage instead of bone. Many live in the Arabian sea near Pakistan.</p>
+     <h3>Key Features:</h3>
+    <ul>
+       <li>Skeleton made of cartilage</li>
+       <li>5-7 gill slits, no gill cover</li>
+       <li>No swim bladder</li>
+       <li>Rough skin with tiny tooth-like scales</li>
+     </ul>
+       <h3>Common examples:</h3>
+      <ul>
+       <li>Great white shark</li>
+       <li>Manta ray</li>
+       <li>Hammerhead Shark</li>
+       <li>Whale Shark - seen off Karachi coast</li>
+      </ul>
+       <a class="video-link" href="https://www.youtube.com/watch?v=NoThgqMG-Us" target="_blank"> Video: Sharks and Rays - What's the Difference?</a>
+       </div>
+
+        <!-- SECTION 3: JAWLESS FISH -->
+  <div class="card">
+    <h2>3. Jawless Fish - Agnatha</h2>
+    <img src="3.jpg" alt="Lamprey jawless fish" loading="lazy">
+    <p>The oldest living group of fish. They don't have jaws and use a sucker mouth to feed.</p>
+    <h3>Key Features:</h3>
+    <ul>
+      <li>No jaws or paired fins</li>
+      <li>Round, sucker-like mouth</li>
+      <li>Skeleton made of cartilage</li>
+      <li>Single nostril on top of head</li>
+    </ul>
+    <h3>Common Examples:</h3>
+    <ul>
+      <li>Lamprey</li>
+      <li>Hagfish</li>
+    </ul>
+    <a class="video-link" href="https://www.youtube.com/watch?v=dl6LhvGdozo" target="_blank">▶️ Video: Jawless Fish - Lampreys and Hagfish</a>
+  </div>
+
+  <!-- SECTION 4: TABBED COMPARISON -->
+  <div class="card">
+    <h2>Quick Comparison</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('table')">Table View</button>
+      <button class="tab-btn" onclick="showTab('bony')">Bony Fish</button>
+      <button class="tab-btn" onclick="showTab('cart')">Cartilaginous</button>
+      <button class="tab-btn" onclick="showTab('jaw')">Jawless</button>
+    </div>
+
+    <div id="table" class="tab-content active">
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Skeleton</th>
+          <th>Jaws</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Bony Fish</td>
+          <td>Bone</td>
+          <td>Yes</td>
+          <td>Salmon, Goldfish, Mahseer</td>
+        </tr>
+        <tr>
+          <td>Cartilaginous Fish</td>
+          <td>Cartilage</td>
+          <td>Yes</td>
+          <td>Shark, Ray, Whale Shark</td>
+        </tr>
+        <tr>
+          <td>Jawless Fish</td>
+          <td>Cartilage</td>
+          <td>No</td>
+          <td>Lamprey, Hagfish</td>
+        </tr>
+      </table>
+    </div>
+    <div id="bony" class="tab-content"><p><b>Bony Fish</b> make up 95% of all fish species. They dominate both freshwater rivers in Pakistan and the ocean.</p></div>
+    <div id="cart" class="tab-content"><p><b>Cartilaginous Fish</b> are apex predators. Whale Sharks are often spotted near Karachi and are completely harmless to humans.</p></div>
+    <div id="jaw" class="tab-content"><p><b>Jawless Fish</b> are living fossils. They've existed for over 360 million years with almost no change.</p></div>
+  </div>
+
+  <!-- SECTION 5: FISH OF PAKISTAN BONUS -->
+  <div class="card">
+    <h2>Fish Found in Pakistan</h2>
+    <ul>
+      <li><b>Mahseer</b> - Bony fish found in rivers of northern Pakistan</li>
+      <li><b>Indian Pomfret</b> - Popular saltwater bony fish in Karachi markets</li>
+      <li><b>Whale Shark</b> - Gentle cartilaginous fish in the Arabian Sea</li>
+      <li><b>Rohu & Catla</b> - Common freshwater bony fish in fish farms</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 6: QUIZ -->
+  <div class="card">
+    <h2>Quick Quiz 🐟</h2>
+    <div class="quiz-q">
+      <p>1. Which type of fish has a swim bladder?</p>
+      <span class="quiz-option" onclick="check(this, true)">Bony Fish</span>
+      <span class="quiz-option" onclick="check(this, false)">Cartilaginous Fish</span>
+      <span class="quiz-option" onclick="check(this, false)">Jawless Fish</span>
+      <div class="result"></div>
+    </div>
+    <div class="quiz-q">
+      <p>2. Whale Shark belongs to which group?</p>
+      <span class="quiz-option" onclick="check(this, false)">Bony Fish</span>
+      <span class="quiz-option" onclick="check(this, true)">Cartilaginous Fish</span>
+      <span class="quiz-option" onclick="check(this, false)">Jawless Fish</span>
+      <div class="result"></div>
+    </div>
+    <div class="quiz-q">
+      <p>3. Which fish has no jaws?</p>
+      <span class="quiz-option" onclick="check(this, false)">Tuna</span>
+      <span class="quiz-option" onclick="check(this, false)">Ray</span>
+      <span class="quiz-option" onclick="check(this, true)">Lamprey</span>
+      <div class="result"></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Project by You | Images from Wikimedia Commons | Videos from YouTube | Educational Purpose</p>
+</footer>
+
+<script>
+  // Dark mode
+  function toggleTheme() {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-btn');
+    if (html.getAttribute('data-theme') === 'dark') {
+      html.removeAttribute('data-theme');
+      btn.textContent = '🌙 Dark';
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      btn.textContent = '☀️ Light';
+    }
+  }
+
+  // Tabs
+  function showTab(id) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Quiz
+  function check(el, isCorrect) {
+    const res = el.parentElement.querySelector('.result');
+    if (isCorrect) {
+      res.textContent = '✅ Correct!';
+      res.style.color = '#2a9d8f';
+    } else {
+      res.textContent = '❌ Try again';
+      res.style.color = '#e63946';
+    }
+  }
+</script>
+
+</body>
+</html
+      
+</head>
+</html>
